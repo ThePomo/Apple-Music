@@ -229,7 +229,34 @@ body {
   gap: 2rem;
 }
 /*Footer*/
-
 .footer {
-  background-color: #323232;
+  background-color: #2a2a2a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 20px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: #ff5a5f;
+}
+
+/*bottoni*/
+
+.bg-custom {
+  background-color: #2a2a2a;
+}
+
+.bg-custom:hover {
+  background-color: #3a3a3a;
+}
+
+/*maledetto testo che non si sposta*/
+.custom-heading {
+  margin-left: 18rem;
 }

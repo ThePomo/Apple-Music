@@ -17,14 +17,14 @@ const ExploreMore: React.FC = () => {
   return (
     <section>
       <Container fluid className="newsContainer m-0 text-white">
-        <h2 className="fs-4 mt-4 ">Altro da esplorare</h2>
+        <h2 className="fs-4 mt-4 custom-heading">Altro da esplorare</h2>
       </Container>
       <Container>
         <Row>
           <Col xs={12} md={4} className=" text-danger">
             {exploreOptions.slice(0, 3).map((category) => {
               return (
-                <div className="d-flex justify-content-between align-items-center  rounded-3 mt-3 p-2">
+                <div className="d-flex justify-content-between align-items-center  bg-custom rounded-3 mt-3 p-2">
                   <p>{category}</p>
                   <i className="bi bi-chevron-right fs-6 ms-2"></i>
                 </div>
@@ -34,7 +34,7 @@ const ExploreMore: React.FC = () => {
           <Col xs={12} md={4} className=" text-danger">
             {exploreOptions.slice(3, 6).map((category) => {
               return (
-                <div className="d-flex justify-content-between align-items-center  rounded-3 mt-3 p-2">
+                <div className="d-flex justify-content-between align-items-center  bg-custom rounded-3 mt-3 p-2">
                   <p>{category}</p>
                   <i className="bi bi-chevron-right fs-6 ms-2"></i>
                 </div>
@@ -44,7 +44,7 @@ const ExploreMore: React.FC = () => {
           <Col xs={12} md={4} className=" text-danger">
             {exploreOptions.slice(6, 9).map((category) => {
               return (
-                <div className="d-flex justify-content-between align-items-center bg-secondary rounded-3 mt-3 p-2">
+                <div className="d-flex justify-content-between align-items-center bg-custom rounded-3 mt-3 p-2">
                   <p>{category}</p>
                   <i className="bi bi-chevron-right fs-6 ms-2"></i>
                 </div>

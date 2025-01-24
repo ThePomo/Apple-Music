@@ -1,16 +1,31 @@
-import React from 'react';
+import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="footer bg-dark text-white  p-3">
-      <p>© 2024 Apple Inc. Tutti i diritti riservati.</p>
+    <footer className="footer text-start text-secondary p-3">
+      <p>
+        Copiright © 2024 <span className="text-white">Apple Inc.</span> Tutti i
+        diritti riservati.
+      </p>
       <p>
         <a href="#" className="text-white">
           Condizioni dei servizi internet
-        </a>{' '}
-        |{' '}
+        </a>{" "}
+        |{" "}
         <a href="#" className="text-white">
-          Privacy
+          Apple Music e privacy
+        </a>{" "}
+        |{" "}
+        <a href="#" className="text-white">
+          Avviso sui Cookie
+        </a>{" "}
+        |{" "}
+        <a href="#" className="text-white">
+          Supporto
+        </a>{" "}
+        |{" "}
+        <a href="#" className="text-white">
+          Feedback
         </a>
       </p>
     </footer>
