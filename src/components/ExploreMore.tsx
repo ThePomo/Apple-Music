@@ -21,35 +21,38 @@ const ExploreMore: React.FC = () => {
       </Container>
       <Container>
         <Row>
-          <Col xs={12} md={4} className=" text-danger">
-            {exploreOptions.slice(0, 3).map((category) => {
-              return (
-                <div className="d-flex justify-content-between align-items-center  bg-custom rounded-3 mt-3 p-2">
-                  <p>{category}</p>
-                  <i className="bi bi-chevron-right fs-6 ms-2"></i>
-                </div>
-              );
-            })}
+          <Col xs={12} md={4} className="text-danger">
+            {exploreOptions.slice(0, 3).map((category, index) => (
+              <div
+                key={`col1-${index}`}
+                className="d-flex justify-content-between align-items-center bg-custom rounded-3 mt-3 p-2"
+              >
+                <p>{category}</p>
+                <i className="bi bi-chevron-right fs-6 ms-2"></i>
+              </div>
+            ))}
           </Col>
-          <Col xs={12} md={4} className=" text-danger">
-            {exploreOptions.slice(3, 6).map((category) => {
-              return (
-                <div className="d-flex justify-content-between align-items-center  bg-custom rounded-3 mt-3 p-2">
-                  <p>{category}</p>
-                  <i className="bi bi-chevron-right fs-6 ms-2"></i>
-                </div>
-              );
-            })}
+          <Col xs={12} md={4} className="text-danger">
+            {exploreOptions.slice(3, 6).map((category, index) => (
+              <div
+                key={`col2-${index}`}
+                className="d-flex justify-content-between align-items-center bg-custom rounded-3 mt-3 p-2"
+              >
+                <p>{category}</p>
+                <i className="bi bi-chevron-right fs-6 ms-2"></i>
+              </div>
+            ))}
           </Col>
-          <Col xs={12} md={4} className=" text-danger">
-            {exploreOptions.slice(6, 9).map((category) => {
-              return (
-                <div className="d-flex justify-content-between align-items-center bg-custom rounded-3 mt-3 p-2">
-                  <p>{category}</p>
-                  <i className="bi bi-chevron-right fs-6 ms-2"></i>
-                </div>
-              );
-            })}
+          <Col xs={12} md={4} className="text-danger">
+            {exploreOptions.slice(6, 9).map((category, index) => (
+              <div
+                key={`col3-${index}`}
+                className="d-flex justify-content-between align-items-center bg-custom rounded-3 mt-3 p-2"
+              >
+                <p>{category}</p>
+                <i className="bi bi-chevron-right fs-6 ms-2"></i>
+              </div>
+            ))}
           </Col>
         </Row>
       </Container>
