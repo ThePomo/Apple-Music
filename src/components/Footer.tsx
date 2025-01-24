@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="footer text-start text-secondary p-3">
+    <footer className="footer text-start text-secondary p-3 ps-5">
       <a href="#" className="text-white">
         Italia
       </a>{" "}
