@@ -1,27 +1,44 @@
 import React from 'react';
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="sidebar bg-sidebar text-white p-3">
-      <h4 className="sidebar-brand mb-4"> Music</h4>
-
-      <div className="search-section mb-4">
-        <input
-          type="text"
-          className="form-control"
-          placeholder="Cerca"
-          aria-label="Search"
+    <div className="d-flex flex-column bg-sidebar vh-100 p-3">
+      <h4 className="sidebar-brand mb-4 mx-3 d-flex align-items-center">
+        <img
+          src="/music.svg"
+          alt="Apple Music Logo"
+          style={{ filter: 'invert(1)' }}
         />
+      </h4>
+
+      <div className="search-section d-flex flex-column gap-3 mb-4 mx-2">
+        <div className="search-container d-flex align-items-center rounded px-2">
+          <i className="bi bi-search sideBarIcons"></i>
+          <input
+            type="text"
+            className="form-control border-0 bg-transparent text-white"
+            placeholder="Cerca"
+            aria-label="Search"
+          />
+        </div>
       </div>
-      <ul className="list-unstyled">
-        <li className="mb-2">
-          <i className="bi bi-house me-2"></i> Home
+
+      <ul className="nav flex-column gap-2">
+        <li className="nav-item">
+          <a href="#" className="nav-link text-white d-flex align-items-center">
+            <i className="bi bi-house-door me-2 sideBarIcons"></i> Home
+          </a>
         </li>
-        <li className="mb-2">
-          <i className="bi bi-stars me-2"></i> Novità
+        <li className="nav-item">
+          <a href="#" className="nav-link text-white d-flex align-items-center">
+            <i className="bi bi-stars me-2 sideBarIcons"></i> Novità
+          </a>
         </li>
-        <li className="mb-2">
-          <i className="bi bi-broadcast me-2"></i> Radio
+        <li className="nav-item">
+          <a href="#" className="nav-link text-white d-flex align-items-center">
+            <i className="bi bi-broadcast me-2 sideBarIcons"></i> Radio
+          </a>
         </li>
       </ul>
     </div>

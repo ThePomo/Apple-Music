@@ -2,29 +2,38 @@ import React from 'react';
 
 const RadioStations: React.FC = () => {
   return (
-    <div className="radio-stations mt-4">
-      <h5 className="text-white">Nuova stazione radio</h5>
-      <div className="d-flex flex-wrap">
-        <div className="card bg-dark text-white m-2" style={{ width: '18rem' }}>
-          <img
-            src="https://via.placeholder.com/150"
-            className="card-img-top"
-            alt="Radio Chill"
-          />
-          <div className="card-body">
-            <h6 className="card-title">Rilassati, al resto pensiamo noi.</h6>
-            <p className="card-text">Ascolta Apple Music Chill.</p>
+    <div className="container mt-3">
+      <h1 className="text-white">Novità</h1>
+      <hr className="title-divider" />
+      <div className="radio-stations mt-4">
+        <div className="row g-4">
+          
+          <div className="col-12 col-md-6">
+            <div className="text-section">
+              <h6 className="text-uppercase text-bright">Nuova stazione radio</h6>
+              <h5 className="text-white">Rilassati, al resto pensiamo noi.Ascolta Apple Music Chill.</h5>
+            </div>
+            <div className="image-section">
+              <img
+                src="./public/1a.png"
+                className="radio-image"
+                alt="Radio Chill"
+              />
+            </div>
           </div>
-        </div>
-        <div className="card bg-dark text-white m-2" style={{ width: '18rem' }}>
-          <img
-            src="https://via.placeholder.com/150"
-            className="card-img-top"
-            alt="Radio Latina"
-          />
-          <div className="card-body">
-            <h6 className="card-title">Ecco la nuova casa della musica latina.</h6>
-            <p className="card-text">Ascolta Apple Music Latino.</p>
+
+          <div className="col-12 col-md-6">
+            <div className="text-section">
+              <h6 className="text-uppercase text-bright">Nuova stazione radio</h6>
+              <h5 className="text-white">Ecco la nuova casa della musica latina.</h5>
+            </div>
+            <div className="image-section">
+              <img
+                src="./public/1b.png"
+                className="radio-image"
+                alt="Radio Latina"
+              />
+            </div>
           </div>
         </div>
       </div>

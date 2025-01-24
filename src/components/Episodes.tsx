@@ -11,19 +11,21 @@ const Episodes: React.FC = () => {
   ];
 
   return (
-    <div className="episodes mt-4">
-      <div className="d-flex justify-content-between align-items-center mb-3">
-        <h5 className="text-white mb-0">Nuovi episodi radio</h5>
-      </div>
-      <div className="d-flex flex-wrap gap-4">
-        {episodes.map((episode) => (
-          <div key={episode.id} style={{ flex: '0 1 calc(20% - 1rem)' }}>
-            <CardComponent
-              title={episode.title}
-              image={episode.image}
-            />
-          </div>
-        ))}
+    <div className="episodes mt-4 d-flex justify-content-center">
+      <div className="episodes-container">
+        <div className="d-flex justify-content-between align-items-center mb-3">
+        <h5 className="text-white text-start mb-0">
+  Nuovi episodi radio
+  <i className="bi bi-chevron-right ms-2" style={{ fontSize: '1rem', color: '#d1d1d1' }}></i>
+</h5>
+        </div>
+        <div className="d-flex flex-nowrap gap-4 overflow-auto">
+          {episodes.map((episode) => (
+            <div key={episode.id} className="flex-shrink-0" style={{ width: '250px' }}>
+              <CardComponent title={episode.title} image={episode.image} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
