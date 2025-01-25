@@ -1,14 +1,15 @@
-import React from 'react';
-import NavbarComponent from './components/NavbarComponent';
-import Sidebar from './components/Sidebar';
-import RadioStations from './components/RadioStations';
-import Episodes from './components/Episodes';
-import NewReleases from './components/NewReleases';
-import ExploreMore from './components/ExploreMore';
-import Footer from './components/Footer';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from "react";
+import NavbarComponent from "./components/NavbarComponent";
+import Sidebar from "./components/Sidebar";
+import RadioStations from "./components/RadioStations";
+import Episodes from "./components/Episodes";
+import NewReleases from "./components/NewReleases";
+import ExploreMore from "./components/ExploreMore";
+import Footer from "./components/Footer";
+import Player from "./components/Player";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import './app.css';
+import "./app.css";
 
 const App: React.FC = () => {
   return (
@@ -24,10 +25,10 @@ const App: React.FC = () => {
             <Episodes />
             <NewReleases />
             <ExploreMore />
+            <Player />
             <Footer />
           </div>
         </div>
-        
       </div>
     </div>
   );

@@ -25,10 +25,11 @@ const ExploreMore: React.FC = () => {
             {exploreOptions.slice(0, 3).map((category, index) => (
               <div
                 key={`col1-${index}`}
-                className="d-flex justify-content-between align-items-center bg-custom rounded-3 mt-3 p-2"
+                className="d-flex align-items-center bg-custom rounded-3 mt-3 p-2"
+                style={{ height: "100px" }}
               >
-                <p>{category}</p>
-                <i className="bi bi-chevron-right fs-6 ms-2"></i>
+                <p className="m-0">{category}</p>{" "}
+                <i className="bi bi-chevron-right fs-6 ms-auto"></i>{" "}
               </div>
             ))}
           </Col>
@@ -36,10 +37,11 @@ const ExploreMore: React.FC = () => {
             {exploreOptions.slice(3, 6).map((category, index) => (
               <div
                 key={`col2-${index}`}
-                className="d-flex justify-content-between align-items-center bg-custom rounded-3 mt-3 p-2"
+                className="d-flex align-items-center bg-custom rounded-3 mt-3 p-2"
+                style={{ height: "100px" }}
               >
-                <p>{category}</p>
-                <i className="bi bi-chevron-right fs-6 ms-2"></i>
+                <p className="m-0">{category}</p>
+                <i className="bi bi-chevron-right fs-6 ms-auto"></i>
               </div>
             ))}
           </Col>
@@ -47,10 +49,11 @@ const ExploreMore: React.FC = () => {
             {exploreOptions.slice(6, 9).map((category, index) => (
               <div
                 key={`col3-${index}`}
-                className="d-flex justify-content-between align-items-center bg-custom rounded-3 mt-3 p-2"
+                className="d-flex align-items-center bg-custom rounded-3 mt-3 p-2"
+                style={{ height: "100px" }}
               >
-                <p>{category}</p>
-                <i className="bi bi-chevron-right fs-6 ms-2"></i>
+                <p className="m-0">{category}</p>
+                <i className="bi bi-chevron-right fs-6 ms-auto"></i>
               </div>
             ))}
           </Col>
